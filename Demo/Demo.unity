@@ -490,7 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 751224512}
+  objectsToActivate:
+  - {fileID: 751224512}
   activeState: 1
 --- !u!1 &201939887
 GameObject:
@@ -537,7 +538,6 @@ Transform:
   m_Children:
   - {fileID: 791741854}
   - {fileID: 1296981063}
-  - {fileID: 431884499}
   - {fileID: 1273182622}
   - {fileID: 86428359}
   - {fileID: 281794565}
@@ -721,7 +721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 751224512}
+  objectsToActivate:
+  - {fileID: 751224512}
   activeState: 0
 --- !u!1 &321171469
 GameObject:
@@ -769,52 +770,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textObject: {fileID: 751224513}
   text: Press Button "1"
---- !u!1 &431884498
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 431884499}
-  - component: {fileID: 431884500}
-  m_Layer: 0
-  m_Name: ActivateButton3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &431884499
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431884498}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 201939889}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &431884500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431884498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1476803332}
-  activeState: 1
 --- !u!1 &526430970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 739361823}
+  objectsToActivate:
+  - {fileID: 739361823}
   activeState: 1
 --- !u!1 &791741853
 GameObject:
@@ -1517,7 +1473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 751224512}
+  objectsToActivate:
+  - {fileID: 751224512}
   activeState: 0
 --- !u!1 &1127490863
 GameObject:
@@ -1696,7 +1653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 751224512}
+  objectsToActivate:
+  - {fileID: 751224512}
   activeState: 1
 --- !u!1 &1220781713
 GameObject:
@@ -1951,7 +1909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 751224512}
+  objectsToActivate:
+  - {fileID: 751224512}
   activeState: 1
 --- !u!1 &1296981062
 GameObject:
@@ -1964,7 +1923,7 @@ GameObject:
   - component: {fileID: 1296981063}
   - component: {fileID: 1296981064}
   m_Layer: 0
-  m_Name: ActivateButton2
+  m_Name: ActivateButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1997,7 +1956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1127490863}
+  objectsToActivate:
+  - {fileID: 1127490863}
+  - {fileID: 1476803332}
   activeState: 1
 --- !u!1 &1341877708
 GameObject:
@@ -2568,7 +2529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ab7cfb9935fe4b8ae15474a956a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 751224512}
+  objectsToActivate:
+  - {fileID: 751224512}
   activeState: 0
 --- !u!1 &1908912914
 GameObject:

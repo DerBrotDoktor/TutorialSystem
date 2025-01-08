@@ -4,12 +4,17 @@ namespace Tutorial.Steps
 {
     public class ActivateStep : TutorialStep
     {
-        [SerializeField] private GameObject objectToActivate;
+        [SerializeField] private GameObject[] objectsToActivate = new GameObject[1];
         [SerializeField] private bool activeState = true;
 
         public override void StartStep()
         {
-            objectToActivate.SetActive(activeState);
+            foreach (var objectToActivate in objectsToActivate)
+            {
+                if (objectToActivate == null) continue;
+                objectToActivate.SetActive(activeState);
+            }
+
             CompleteStep();
         }
     }
